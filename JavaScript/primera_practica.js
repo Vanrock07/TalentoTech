@@ -71,7 +71,6 @@ do {               //ejecuta al menos una vez y luego evalua
 } while (i < 10);
 
 //if con dos condiciones
-
 if (Y>2 && y<=5){
 
     alert("mayor que 2 y menor o igual a 5 ")
@@ -83,7 +82,6 @@ if (Y>2 && y<=5){
 }
 
 //switch
-
 let numero13 = 3;
 
 switch (numero13) {
