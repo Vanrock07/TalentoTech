@@ -28,8 +28,6 @@ function getPeliculas(){
 //   .then(peliculas => console.log(peliculas))
 //   .catch(err => console.error(err.message));
 
-
-
 //FUNCION ASINCRONA 
  const mostrarPeliculas = async() => {
     try{
@@ -37,7 +35,7 @@ function getPeliculas(){
         console.log(peli);
     }
     catch(err){
-        console.error(err.message);
+        console.log(err.message);
     }
  }
  mostrarPeliculas();
