@@ -66,4 +66,6 @@
 function sumar(num1, num2){
     return num1 + num2;
 }
-export{sumar} //exportacion de la función
+export{sumar} //exportacion de la funcion
+
+//tareas: hacer funcionar todos estos codigos!!!!
