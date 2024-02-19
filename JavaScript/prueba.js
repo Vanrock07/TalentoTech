@@ -1,4 +1,4 @@
-//callbacks : 
+//callbacks****************** EJEMPLO 1*********************: 
 
 
 // function crearCita (cita, callback) {
@@ -12,7 +12,7 @@
 // crearCita(" come tus vegetales", logCita);
 
 
- //ejemplo2
+ //**************ejemplo 2********************
 
 // function solicitudServidor(consulta, callback) {
 //         setTimeout(function(){
@@ -26,22 +26,44 @@
 
 // solicitudServidor("El servidor está " + resultadoServidor);
 
-//ejemplo 3
+//****************ejemplo 3************************
 
-function modificar (array, callback) {
-    array.push = ["red"]
-    setTimeout(function(){
-        callback();
-    },1000);
+//  function modificar (array, callback) {
+//      array.push = ["red"]
+//       setTimeout(() => {
+//          callback();
+//       },1000);
+
+// //     callback();
+//  }
+
+//  const partes = ["conexion", "caidas", "servidor"];
+
+//  modificar(partes, function(){
+//      console.log(`se modificó el array de ${partes.length} elementos`);
+//      console.log(partes);
+//  })
+
+
+//*************** */ ejemplo 5************************
+// console.log("Await Llamada")
+// function resolveLlamada(){
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve("resolved");
+//     }, 3000);
+//   });
+// }
+// async function asyncLlamada(){
+//     console.log(`calling`);
+//     const result = await resolveLlamada();
+//     console.log(result);
+// }
+// asyncLlamada();
+
+//***********FUNCION EXPORT*********************
+
+function sumar(num1, num2){
+    return num1 + num2;
 }
-
-const partes = ["conexion", "caidas", "servidor"];
-
-modificar (partes, function(){
-    console.log(`se modificó el array de ${partes.length} elementos`);
-    console.log(partes);
-})
-
-
-
-
+export{sumar} //exportacion de la función
