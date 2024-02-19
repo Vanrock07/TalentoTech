@@ -1,15 +1,15 @@
 //callbacks****************** EJEMPLO 1*********************: 
 
 
-// function crearCita (cita, callback) {
-//     var miCita = "como yo siempre digo:" + cita;
-//     callback(miCita);    
-// }
-// function logCita(cita) {
-//     console.log(cita);
-// }
+function crearCita (cita, callback) {
+    var miCita = "como yo siempre digo:" + cita;
+    callback(miCita);    
+}
+function logCita(cita) {
+    console.log(cita);
+}
 
-// crearCita(" come tus vegetales", logCita);
+crearCita(" come tus vegetales", logCita);
 
 
  //**************ejemplo 2********************
