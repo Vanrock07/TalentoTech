@@ -26,3 +26,16 @@ console.log(lista);
 //eliminar un elemento especifico de lista
 lista.splice(1,1);
 console.log(lista);
+
+//agregar elemento en la primera posicion de la lista
+
+lista.unshift("first");
+console.log(lista);
+
+//eliminar elemento de la primera posicion de la lista
+
+lista.shift();
+console.log(lista);
+
+
+
