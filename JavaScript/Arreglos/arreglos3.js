@@ -48,3 +48,29 @@ function rest(x, y, z, ...args) {
 console.log(rest(1, 2, 3));
 console.log(rest(1, 2,3, 4));
 console.log(rest(1, 2, 3, 4, 5));
+
+//Parametros rest
+//el primer ejemplo muestra una funcion estandar usando arguments
+function listar (a,b){
+    console.log(a);
+    console.log(b);
+    console.log("fin",arguments);
+    console.log("tamaño: ",arguments.length);
+    console.log(arguments[2]);
+}
+
+listar("pera","manzana","melon", "limon","fresa");
+//aqui usamos Parametros Rest
+
+console.log("Parametros Rest");
+
+function PaRest(a, b, ...z){
+
+    console.log("fin", z);
+    console.log("tamaño: ", z.length);
+    console.log(z[2]);
+}
+
+PaRest("pera","manzana","melon", "limon","fresa");
+
+
