@@ -47,12 +47,12 @@ const objeto = {
 console.log(objeto);
 console.log(typeof(objeto));
 
-const texto = JSON.stringify(objeto);
+const texto = JSON.stringify(objeto);  //convierte un objeto a cadena de texto
 console.log(texto);
 console.log(typeof(texto));
 
 const objetoAgain = JSON.parse(texto);
-console.log(objetoAgain);
+console.log(objetoAgain);            //conviete la cadena a un objeto
 console.log(typeof(objetoAgain));
 
 
